@@ -584,7 +584,7 @@ After successful deployment:
 5. ✅ **Create Agent Tasks**
    - Review generated tasks in `scripts/agent_tasks/`
    - Create GitHub Issues from approved tasks
-   - Label with `agent-task` for Codex pickup
+   - Label with `agent-task` for BlackRoad OS pickup
 
 ---
 
