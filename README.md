@@ -1,153 +1,48 @@
-# BlackRoad OS Metrics
+<!-- BlackRoad SEO Enhanced -->
 
-**Real-time data aggregation across all BlackRoad OS infrastructure**
+# ulackroad os metrics
 
-**Last Updated:** Auto-updated via GitHub Actions every hour
+> Part of **[BlackRoad OS](https://blackroad.io)** — Sovereign Computing for Everyone
 
----
+[![BlackRoad OS](https://img.shields.io/badge/BlackRoad-OS-ff1d6c?style=for-the-badge)](https://blackroad.io)
+[![BlackRoad OS](https://img.shields.io/badge/Org-BlackRoad-OS-2979ff?style=for-the-badge)](https://github.com/BlackRoad-OS)
+[![License](https://img.shields.io/badge/License-Proprietary-f5a623?style=for-the-badge)](LICENSE)
 
-## Purpose
+**ulackroad os metrics** is part of the **BlackRoad OS** ecosystem — a sovereign, distributed operating system built on edge computing, local AI, and mesh networking by **BlackRoad OS, Inc.**
 
-Single source of truth for all BlackRoad OS metrics:
-- Repository stats
-- Infrastructure inventory
-- Codebase metrics
-- Deployment status
-- Application tracking
-- Financial data
+## About BlackRoad OS
 
-**This repository updates automatically** - no manual maintenance required.
+BlackRoad OS is a sovereign computing platform that runs AI locally on your own hardware. No cloud dependencies. No API keys. No surveillance. Built by [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc), a Delaware C-Corp founded in 2025.
 
----
+### Key Features
+- **Local AI** — Run LLMs on Raspberry Pi, Hailo-8, and commodity hardware
+- **Mesh Networking** — WireGuard VPN, NATS pub/sub, peer-to-peer communication
+- **Edge Computing** — 52 TOPS of AI acceleration across a Pi fleet
+- **Self-Hosted Everything** — Git, DNS, storage, CI/CD, chat — all sovereign
+- **Zero Cloud Dependencies** — Your data stays on your hardware
 
-## Data Files
+### The BlackRoad Ecosystem
+| Organization | Focus |
+|---|---|
+| [BlackRoad OS](https://github.com/BlackRoad-OS) | Core platform and applications |
+| [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc) | Corporate and enterprise |
+| [BlackRoad AI](https://github.com/BlackRoad-AI) | Artificial intelligence and ML |
+| [BlackRoad Hardware](https://github.com/BlackRoad-Hardware) | Edge hardware and IoT |
+| [BlackRoad Security](https://github.com/BlackRoad-Security) | Cybersecurity and auditing |
+| [BlackRoad Quantum](https://github.com/BlackRoad-Quantum) | Quantum computing research |
+| [BlackRoad Agents](https://github.com/BlackRoad-Agents) | Autonomous AI agents |
+| [BlackRoad Network](https://github.com/BlackRoad-Network) | Mesh and distributed networking |
+| [BlackRoad Education](https://github.com/BlackRoad-Education) | Learning and tutoring platforms |
+| [BlackRoad Labs](https://github.com/BlackRoad-Labs) | Research and experiments |
+| [BlackRoad Cloud](https://github.com/BlackRoad-Cloud) | Self-hosted cloud infrastructure |
+| [BlackRoad Forge](https://github.com/BlackRoad-Forge) | Developer tools and utilities |
 
-### Infrastructure
-- `infrastructure.json` - Live infrastructure inventory
-- `repositories.json` - All GitHub repos with stats
-- `cloudflare.json` - Cloudflare zones, Pages, KV, D1
-- `railway.json` - Railway projects and deployments
-
-### Codebase
-- `code-metrics.json` - LOC, files, commits across all repos
-- `languages.json` - Language breakdown
-- `dependencies.json` - Package dependencies
-
-### Applications
-- `job-applications.json` - Job application tracker
-- `response-rates.json` - Application success metrics
-
-### Business
-- `revenue.json` - Revenue tracking (if applicable)
-- `crypto-holdings.json` - Crypto portfolio (anonymized)
-
-### Resume
-- `resume-data.json` - Latest resume metrics for easy embedding
-
----
-
-## Update Frequency
-
-- **Every hour:** Infrastructure, repos, deployments
-- **Every 6 hours:** Code metrics, dependencies
-- **Daily:** Job applications, financial data
+### Links
+- **Website**: [blackroad.io](https://blackroad.io)
+- **Documentation**: [docs.blackroad.io](https://docs.blackroad.io)
+- **Chat**: [chat.blackroad.io](https://chat.blackroad.io)
+- **Search**: [search.blackroad.io](https://search.blackroad.io)
 
 ---
 
-## Usage
 
-### Embed Latest Metrics in Any Project
-
-```javascript
-// Fetch latest metrics
-const metrics = await fetch('https://raw.githubusercontent.com/BlackRoad-OS/blackroad-os-metrics/main/infrastructure.json');
-const data = await metrics.json();
-
-console.log(`Total repos: ${data.total_repos}`);
-console.log(`Total LOC: ${data.total_loc}`);
-```
-
-### Python
-```python
-import requests
-
-metrics = requests.get('https://raw.githubusercontent.com/BlackRoad-OS/blackroad-os-metrics/main/code-metrics.json').json()
-print(f"Total LOC: {metrics['total_loc']:,}")
-```
-
-### Bash
-```bash
-curl -s https://raw.githubusercontent.com/BlackRoad-OS/blackroad-os-metrics/main/infrastructure.json | jq '.total_repos'
-```
-
----
-
-## Auto-Update System
-
-This repository uses GitHub Actions to:
-1. Scan all BlackRoad-OS repositories
-2. Query Cloudflare API
-3. Query Railway API
-4. Aggregate codebase metrics
-5. Update JSON files
-6. Commit and push changes
-
-**Runs automatically** - no manual intervention needed.
-
----
-
-## Verification
-
-All data is verified using PS-SHA-∞ cryptographic hashing.
-
-Each JSON file includes:
-```json
-{
-  "data": { ... },
-  "metadata": {
-    "updated_at": "2025-12-26T18:30:00Z",
-    "verification_hash": "sha256:...",
-    "source": "github-actions"
-  }
-}
-```
-
----
-
-## Source of Truth Hierarchy
-
-1. **GitHub** (BlackRoad-OS) - Canonical code
-2. **Cloudflare** - Live infrastructure
-3. **This Repository** - Aggregated metrics
-4. **Resume Files** - Human-readable summaries
-
----
-
-## Access
-
-**Public Repository:** Anyone can read metrics
-**Write Access:** GitHub Actions only (automated)
-
----
-
-**Status:** ✅ Operational
-**Next Update:** Automatic (every hour)
-
----
-
-## 📜 License & Copyright
-
-**Copyright © 2026 BlackRoad OS, Inc. All Rights Reserved.**
-
-**CEO:** Alexa Amundson | **PROPRIETARY AND CONFIDENTIAL**
-
-This software is NOT for commercial resale. Testing purposes only.
-
-### 🏢 Enterprise Scale:
-- 30,000 AI Agents
-- 30,000 Human Employees
-- CEO: Alexa Amundson
-
-**Contact:** blackroad.systems@gmail.com
-
-See [LICENSE](LICENSE) for complete terms.
